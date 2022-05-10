@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	<category>
+	    <pattern>hi</pattern>
+	    <template>Hello I am WGU CS Career Advisor. Please tell me what career you're interested in learning more about.
+	    Type "Start" to learn more about tech careers.</template>
+    </category>
+	
+	<category>
+	    <pattern>Start</pattern>
+	    <template>
+	        Which technologies did you enjoy studying?
+	        <reply>
+	            <text>HTML, CSS and JavaScript</text>
+	            <postback>FrontEndDev</postback>
+            </reply>
+            
+            
+            <reply>
+                <text>SQL and Databases</text>
+                <postback>SQLData</postback>
+            </reply>
+            
+            <reply>
+                <text>C++, Java, Python etc</text>
+                <postback>MobileDev</postback>
+            </reply>
+            
+            <reply>
+                <text>Data Visualization and Data Analysis</text>
+                <postback>DataScience</postback>
+            </reply>
+            
+            <reply>
+                <text>Malware Analysis</text>
+                <postback>CyberSecurity</postback>
+            </reply>
+            
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>FrontEndDev</pattern>
+        <template>Because you like HTML, CSS and JavaScript, you might like:
+        <button>
+            <text>Front-End Developer</text>
+            <url>https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SQLData</pattern>
+        <template>Because you like SQL and Databases you might like:
+        <button>
+            <text>Database Adminstrator</text>
+        <url>https://www.pluralsight.com/resource-center/guides/guide-to-becoming-a-database-admin</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>MobileDev</pattern>
+        <template>Because you like C++, Java, Python etc, you might like:
+        <button>
+            <text>Desktop/Mobile App Developer</text>
+            <url>https://careerkarma.com/careers/mobile-development/</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DataScience</pattern>
+        <template>Because you like Data Visualization and Data Analysis, you might like:
+        <button>
+            <text>Data Science/Data Engineering</text>
+            <url>https://www.mastersindatascience.org/careers/data-scientist/</url>
+        </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>CyberSecurity</pattern>
+        <template>Because you like Malware Analysis, you might like:
+        <button>
+            <text>Cyber Security Analyst</text>
+            <url>https://brainstation.io/career-guides/how-to-become-a-cybersecurity-analyst</url>
+        </button>
+        </template>
+    </category>
+    
+</aiml>
